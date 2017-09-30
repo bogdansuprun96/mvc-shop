@@ -1,9 +1,10 @@
 <a href="nodejs/start.html">Node JS</a>
 <hr>
 <?php
-header("Refresh: 1");
+//header("Content-Type: text/html");
+/*header("Refresh: 1");
 $time = date("H:i:s");
-echo $time;
+echo $time;*/
 /*$host  = $_SERVER['HTTP_HOST'];
 $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
 $extra = 'nodejs/start.html';
@@ -67,3 +68,32 @@ header("Location: http://www.google.com.ua", true, 301);
 // Перезапрос ресурса
 header("Refresh: 3");
 header("Refresh: 3; url=http://www.google.com.ua");*/
+
+
+/*header("Content-Type: text/html; charset-utf-8");
+header("Content-Type: text.plain");
+header("Content-Disposition: attachment; filename=\");*/
+
+/*
+// Заборона кешування
+header('Cahe-Control: no-cache, max-age=0');
+//Повна заборона кешування
+header('Cahe-Control: no-store');
+//Дозвіл кешування на одну годину відносно часу
+header('Cahe-Control: max-age=3600');
+// Дозвіл кешування на 1 годину
+header("Expires " . date("r", time() +3600));*/
+
+/*//Включаємо буферизацію
+ob_start();
+
+echo "Hello";
+
+$out1 = ob_get_contents();
+
+echo "World";
+
+$out2 = ob_get_contents();
+
+//відправляємо вісткість буфера та відключаємо його
+ob_end_flush();*/
