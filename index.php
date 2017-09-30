@@ -37,7 +37,7 @@ setcookie('userData', $str);
 
 echo $str;*/
 
-if (isset($_COOKIE['visitCounter']) and $_COOKIE['visitCounter'] != 0)
+/*if (isset($_COOKIE['visitCounter']) and $_COOKIE['visitCounter'] != 0)
 {
     $visitCounter = $_COOKIE['visitCounter'];
     $visitCounter++;
@@ -50,6 +50,17 @@ else {
     setcookie('visitCounter', $visitCounter, time()+3600);
 }
 
-echo $_COOKIE['visitCounter'];
-
+echo $_COOKIE['visitCounter'];*/
+/*
 //setcookie('visitCounter', "", 1);
+//Переадресація зі статусом 302
+header("Location: http://www.google.com.ua");
+// Переадресація зі статусом 302
+header("HTTP/1.1 301 Moved Permanently");
+header("Location: http://www.google.com.ua");
+// Or
+header("Location: http://www.google.com.ua", true, 301);
+
+// Перезапрос ресурса
+header("Refresh: 3");
+header("Refresh: 3; url=http://www.google.com.ua");*/
