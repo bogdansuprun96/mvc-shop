@@ -1,6 +1,9 @@
 <a href="nodejs/start.html">Node JS</a>
 <hr>
 <?php
+header("Refresh: 1");
+$time = date("H:i:s");
+echo $time;
 /*$host  = $_SERVER['HTTP_HOST'];
 $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
 $extra = 'nodejs/start.html';
