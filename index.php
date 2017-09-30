@@ -97,3 +97,5 @@ $out2 = ob_get_contents();
 
 //відправляємо вісткість буфера та відключаємо його
 ob_end_flush();*/
+
+//echo crypt('password');
